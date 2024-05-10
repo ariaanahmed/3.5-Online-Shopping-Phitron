@@ -1,0 +1,291 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-btn {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 92%;
+    left: 40px;
+}
+
+.banner-btn2 {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 92%;
+    left: 100px;
+}
+
+.banner-text-container {
+    width: 52%;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+.section-title-div {
+    border-top: 2px dashed rgb(194, 194, 194);
+    border-bottom: 2px dashed rgb(194, 194, 194);
+    margin: 60px 0;
+}
+
+.program-section-bottom-img {
+    position: relative;
+}
+
+.program-section-div {
+    position: absolute;
+    bottom: 5%;
+}
+
+.social-media-icon {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-media-icon a {
+    color: black;
+}
+
+.social-media-icon a:hover {
+    color: rgb(118, 118, 118);
+}
+
+/* circle progress */
+.circle-progress {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background: conic-gradient(green 300deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.circle-progress::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* program section */
+
+.program-section-left-bg-img {
+    height: 300px;
+    background: rgba(0, 0, 0, 0.4) url('./Images/2.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.program-section-right-bg-img {
+    height: 300px;
+    background: rgba(0, 0, 0, 0.4) url('./Images/3.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.program-section-bottom-img {
+    height: 500px;
+    background: rgba(0, 0, 0, 0.4) url('./Images/4.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+/* ----------------------------300px------------------------------- */
+@media only screen and (max-width: 300px) {
+    .banner-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 85%;
+        left: 7%;
+    }
+
+    .banner-btn2 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 85%;
+        left: 20%;
+    }
+
+    .section-title-div p {
+        display: none;
+    }
+
+    .program-section-p {
+        display: none;
+    }
+}
+
+/* ----------------------------300px to 600px------------------------------- */
+@media only screen and (min-width: 301px) and (max-width: 600px) {
+    .banner-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 40px;
+    }
+
+    .banner-btn2 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 100px;
+    }
+
+    .section-title-div p {
+        display: none;
+    }
+
+    /* circle progress */
+    .circle-progress {
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+    }
+
+    .circle-progress::before {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+    }
+
+    .progress-value {
+        font-size: 2rem;
+    }
+}
+
+/* ----------------------------601px to 900px------------------------------- */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .banner-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 40px;
+    }
+
+    .banner-btn2 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 100px;
+    }
+
+    .banner-text-container {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+    }
+
+    /* circle progress */
+    .circle-progress {
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+    }
+
+    .circle-progress::before {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+    }
+
+    .progress-value {
+        font-size: 2rem;
+    }
+}
+
+/* ----------------------------901px to 1300px------------------------------- */
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+    .banner-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 40px;
+    }
+
+    .banner-btn2 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 100px;
+    }
+
+    .banner-text-container {
+        position: absolute;
+        top: 60%;
+        left: 45%;
+    }
+
+    /* circle progress */
+    .circle-progress {
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+    }
+
+    .circle-progress::before {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+    }
+
+    .progress-value {
+        font-size: 2rem;
+    }
+
+}
